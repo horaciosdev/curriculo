@@ -1,6 +1,6 @@
 import AboutContainer from "./AboutContainer";
 import ProjectsContainer from "./ProjectsContainer";
-import TecnologiesContainer from "./TecnologiesContainer";
+import TechnologiesContainer from "./TechnologiesContainer";
 
 import "../styles/components/maincontent.sass";
 
@@ -8,7 +8,7 @@ const MainContent = () => {
   return (
     <main id="main-content">
       <AboutContainer />
-      <TecnologiesContainer />      
+      <TechnologiesContainer />      
       <ProjectsContainer />
     </main>
   );
