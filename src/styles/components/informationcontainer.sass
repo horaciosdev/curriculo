@@ -2,13 +2,13 @@
 @use '../mixins'
 
 #information
-    @include mixins.center
+    @include mixins.center    
     flex-direction: column
     background-color: variables.$bg-color-secondary
     padding: 1rem
     margin-bottom: 2rem
     text-align: left
-    width: 80%
+    width: 90%
     border-radius: variables.$card-border-radius
 
     .info-card
@@ -28,11 +28,13 @@
     p
         color: variables.$text-color
         font-weight: bold
+        font-size: .9rem
+        word-break: break-all
 
     svg
         background-color: variables.$bg-color
         padding: .4rem
-        width: 2rem
+        min-width: 2rem
         height: 2rem
         border-radius: variables.$card-border-radius
 
