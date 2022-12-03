@@ -3,15 +3,12 @@ const AboutContainer = () => {
     <section className="about-container">
       <h2>Sobre</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, eum
-        repudiandae? Laudantium tenetur ea, distinctio est earum, minima iusto
-        sapiente quis nam culpa autem velit ab officiis obcaecati vitae odio.
+        Programador autodidata com foco em desenvolvimento web front-end, mas também com alguma experiência em back-end.
+        O objetivo é continuar aprendendo e evoluindo coletiva e individualmente, produzindo código limpo e manutenível.
       </p>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
-        repellat impedit, minima repudiandae vitae maxime molestiae doloremque
-        laborum, possimus debitis dicta deleniti. Laboriosam dolores sapiente
-        dolor adipisci nostrum reprehenderit atque!
+        Além disso, também tenho como hobbies a modelagem 3D com Blender, o desenvolvimento de jogos com o GameMaker,
+        a fotografia e a pintura digital.
       </p>
     </section>
   );
