@@ -13,8 +13,9 @@
     padding: 2rem 0
     min-width: 336.66px
 
-    img        
-        width: 60%
+    img
+        width: 30%
+        min-width: 175px
         object-fit: cover
         border-radius: variables.$container-border-radius
 
@@ -27,4 +28,31 @@
 
     .btn
         @include mixins.btn
-        
+        &:hover
+            cursor: pointer
+
+@media print
+    #sidebar
+        background-color: variables.$print-bg-color
+        border-radius: unset
+        display: block
+        text-align: left
+        padding: 0
+
+        .title
+            color: variables.$print-text-color
+            background-color: variables.$print-bg-color
+            font-size: 2rem
+            padding: 0
+            margin-bottom: 1rem
+            color: #000
+
+        img
+            display: inline-block
+            float: right
+            margin-right: 2rem
+            width: 20%
+            min-width: 0
+            filter: grayscale(100%)
+        .btn
+            display: none

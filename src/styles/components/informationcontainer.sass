@@ -2,7 +2,7 @@
 @use '../mixins'
 
 #information
-    @include mixins.center    
+    @include mixins.center
     flex-direction: column
     background-color: variables.$bg-color-secondary
     padding: 1rem
@@ -19,12 +19,12 @@
         margin-bottom: .8rem
         border-bottom: 1px solid #444
         width: 100%
-    
+
     h3
         color: variables.$text-color-secondary
         font-size: .8rem
         margin-bottom: .5rem
-        
+
     p
         color: variables.$text-color
         font-weight: bold
@@ -46,3 +46,56 @@
 
     #pin-icon
         color: #c17ceb
+
+@media print
+    #information
+        display: inline-block
+        background-color: variables.$print-bg-color
+        border: none
+        padding: 0
+        margin: 0
+        text-align: left
+        width: 90%
+
+        .info-card
+            display: inline-block
+            gap: 0
+            padding: .2rem
+            margin-bottom: 0
+            border: none
+            width: 100%
+
+            div
+                display: inline-block
+
+        h3
+            display: inline-block
+            color: variables.$print-text-color
+            font-size: 1rem
+            font-weight: normal
+            margin-bottom: 0
+
+            &:after
+                content: ": \2009"
+            &:before
+                content: "\2002"
+
+        p
+            display: inline-block
+            color: variables.$print-text-color
+            font-weight: normal
+            font-size: .9rem
+            word-break: break-all
+
+        svg
+            display: inline-block
+            background-color: #fff
+            padding: 0
+            min-width: 1rem
+            height: 1rem
+            border-radius: variables.$card-border-radius
+
+        #phone-icon,
+        #email-icon,
+        #pin-icon
+            color: #000

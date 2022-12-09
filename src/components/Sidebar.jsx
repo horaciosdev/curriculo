@@ -11,9 +11,9 @@ const Sidebar = () => {
       <p className="title">Horácio Schumann</p>
       <SocialNetworks />
       <InformationContainer />
-      <a href="" className="btn">
-        Download curriculo
-      </a>
+      {/* <button onClick={window.print} className="btn">
+        Download Currículo
+      </button> */}
     </aside>
   );
 };

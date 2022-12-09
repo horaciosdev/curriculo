@@ -27,3 +27,28 @@
         background: variables.$gradient
         > svg
             color: variables.$text-color
+
+@media print
+    #social-networks
+        display: inline-block
+        justify-content: left
+        align-items: left
+        margin: 0
+        gap: 0
+
+        #linkedin,
+        #github,
+        #instagram
+            color: #000
+
+        .social-btn
+            background-color: variables.$print-bg-color
+            border-radius: variables.$card-border-radius
+            color: variables.$print-text-color
+            display: block
+            text-align: left
+            font-size: 1rem
+            text-decoration: none
+            padding: .2rem
+            &:after
+                content: '\2002' attr(href)
